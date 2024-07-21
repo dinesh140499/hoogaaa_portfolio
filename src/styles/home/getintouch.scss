@@ -1,0 +1,36 @@
+@import "../common/colors.scss";
+
+
+.getintouch {
+  margin-top: 50px;
+  background-color: $bg-color;
+  margin-top: 50px;
+
+  .getintouchcard {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .icon {
+      height: 45px;
+      width: 45px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      background-color: $primary-color;
+      text-align: center;
+    }
+    h4 {
+      color: $black-color;
+      font-size: 1.4rem;
+    }
+    p {
+        color: $primary-color;
+    }
+    span {
+        font-weight: 500;
+      color: $primary-color;
+    }
+  }
+}

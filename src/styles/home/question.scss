@@ -1,0 +1,55 @@
+@import "../common/colors.scss";
+
+.question {
+  margin-top: 50px;
+  .question-card {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    text-align: left;
+    div {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      h4 {
+        font-size: 1rem;
+      }
+
+      svg {
+        color: $primary-color;
+        font-size: 1rem;
+      }
+    }
+    .ans {
+      color: $para-color;
+      display: none;
+      font-size: 15px;
+    }
+
+    .ans.active {
+      display: block;
+    }
+
+    &:last-of-type {
+      border: none;
+    }
+  }
+  .contact-question {
+    background-color: $bg-color;
+    border-radius: 16px;
+    text-align: center;
+
+    .img-box{
+      height: 100px;
+      width: 100px;
+      img{
+        width: 100%;
+        object-fit: contain;
+      }
+    }
+
+    button {
+      margin: 0;
+    }
+  }
+}
+

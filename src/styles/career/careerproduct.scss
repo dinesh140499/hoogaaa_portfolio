@@ -1,0 +1,101 @@
+@import "../common/colors.scss";
+
+.career-product {
+  padding: 1rem;
+
+  .bookmark{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease;
+    cursor: pointer;
+
+    svg{
+      color: rgba(0, 0, 0, 0.6);
+    }
+
+    
+  }
+ 
+  .title {
+    h4 {
+      color: $primary-color;
+      font-weight: bold;
+    }
+
+    a {
+      font-size: 1.5rem;
+      display: inline-block;
+      animation: move 1s linear infinite alternate;
+      position: relative;
+      font-weight: bold;
+    }
+  }
+  .title-bottom-icon {
+    p {
+      color: $para-color;
+    }
+  }
+
+  .product-desc {
+    p {
+      color: $para-color;
+      line-height: 1.8;
+    }
+
+    h4 {
+      font-weight: 500;
+    }
+
+    .desc {
+      h4 {
+        font-size: 1.3rem;
+        font-weight: 500;
+      }
+      li {
+        list-style-type: circle;
+        color: $para-color;
+        margin-top: 1rem;
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+.career-product  .careerproduct-btn {
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    color: #fff;
+    background-color: $primary-color;
+    padding: 10px 20px;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    display: inline-flex;
+    align-items: center;
+    font-size: 15px;
+    margin-top: 2rem;
+  } 
+
+@media(max-width: 769px) {
+  .career-product {
+    text-align: left;
+  }
+}
+
+@keyframes move {
+  from {
+    transform: translateX(-5px);
+  }
+}
+
+
+.bookmark.active{
+  background: rgba(0, 0, 0, 0.3);
+  svg{
+    color: #fff;
+  }
+}

@@ -1,0 +1,21 @@
+@import './colors.scss';
+
+.section-para{
+    text-align: center;
+    max-width:800px;
+    margin:auto;
+
+    span{
+        color: $primary-color;
+    }
+
+    h4{
+        font-weight: 600;
+        font-size: 1.8rem;
+    }
+
+    p{
+        margin: 0.8rem 0;
+        color: $para-color;
+    }
+}

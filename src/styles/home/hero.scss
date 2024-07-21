@@ -1,0 +1,79 @@
+@import "../common/colors.scss";
+
+.hero {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  background: url("../../../public/images/Hero/BG.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: relative;
+  flex-direction: column;
+
+  .row {
+    margin-bottom: 6rem;
+
+    h1 {
+      font-weight: bold;
+      font-size: 3rem;
+    }
+  }
+
+  span {
+    color: $primary-color;
+  }
+
+  .strip {
+    position: relative;
+    .first {
+      position: relative;
+      top: 40%;
+      left: -45%;
+      bottom: 0;
+
+      img:last-child {
+        position: absolute;
+        left: -10%;
+        top: 70.9%;
+      }
+    }
+    .last {
+      position: relative;
+      top: -52%;
+      right: -68%;
+      bottom: 0;
+      img:last-child {
+        position: absolute;
+        right: 26.9%;
+        top: 70.9%;
+      }
+    }
+  }
+}
+
+
+.hero button{
+  font-weight: 500;
+}
+
+.hero-bottom {
+  margin-top: 30px;
+  h4 {
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 1.5rem;
+  }
+  p {
+    color: $para-color;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero .row h1 {
+    font-size:2rem;
+  }
+}

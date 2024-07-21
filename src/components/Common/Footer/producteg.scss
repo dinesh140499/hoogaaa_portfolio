@@ -1,0 +1,47 @@
+@import '../../../styles/common/colors.scss';
+
+
+   
+   .producteg-eg {
+       .icon {
+           height: 43px;
+           width: 43px;
+           display: inline-flex;
+           justify-content: center;
+      align-items: center;
+      background-color: $primary-color;
+      color: white;
+      border-radius: 50%;
+      
+      img{
+          width: 50%;
+        }
+    }
+    
+    h4 {
+        color: $black-color;
+        font-size: 1.4rem;
+    }
+    
+    p{
+        color: $para-color;
+        margin-bottom: 0;
+    }
+    
+    a{
+        color: $primary-color;
+        font-weight: normal;
+        display: inline-block;
+        
+    }
+}
+
+.producteg .section-para{
+    padding: 1rem;
+}
+
+@media (max-width:992px) {
+    .producteg-eg .icon{
+        margin: auto;
+    }
+}

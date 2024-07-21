@@ -1,0 +1,239 @@
+@import "../common/colors.scss";
+
+.personalinfo {
+  
+  .title {
+    font-size: 1.2rem;
+  }
+  .title-bottom {
+    color: $para-color;
+  }
+  label {
+    font-weight: 500;
+  }
+
+  .photo,
+  .porfolio {
+    span {
+      color: $para-color;
+      font-size: 15px;
+    }
+    .img-box {
+      height: 60px;
+      width: 60px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        width: 100%;
+      }
+    }
+    .img-upload {
+      border: 2px dotted $primary-color;
+      padding: 10px;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      border-radius: 10px;
+
+      input[type="file"] {
+        display: none; 
+      }
+
+      label {
+        color: $para-color;
+        margin: auto;
+        span {
+          color: $primary-color;
+          &:hover {
+            border-bottom: 1px solid $primary-color;
+          }
+        }
+      }
+      .upload-icon {
+        height: 55px;
+        width: 55px;
+        position: relative;
+        background-color: $bg-color;
+        border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+        animation: icon-radius 0.3s linear infinite alternate-reverse;
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        svg {
+          color: $primary-color;
+          font-size: 25px;
+          z-index: 5;
+        }
+        &::after {
+          content: "";
+          height: 40px;
+          width: 40px;
+          position: absolute;
+          top: 5px;
+          left: 5px;
+          z-index: -1;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: white;
+          border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+
+          animation: icon-radius-2 0.3s linear infinite alternate-reverse;
+        }
+      }
+    }
+  }
+
+  .position {
+    .icon {
+      height: 30px;
+      width: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  .porfolio {
+    .portfolio-card {
+      padding: 1rem;
+      border: 1px dotted $primary-color;
+      border-radius: 10px;
+
+      .icon {
+        height: 40px;
+        width: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        background-color: $bg-color;
+        color: $primary-color;
+        svg {
+          font-size: 20px;
+        }
+
+      }
+      .icondel{
+        font-size: 20px;
+        color:grey;
+
+        svg{
+          cursor: pointer;
+        }
+      }
+      h4 {
+        font-size: 1rem;
+      }
+      p {
+        color: $para-color;
+      }
+
+      .scale {
+        height: 7px;
+        width: 100%;
+        background-color: rgba(0,0,0,0.1);
+        border-radius: 10px;
+        position: relative;
+        z-index: 2;
+
+        .bar {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          background-color: $primary-color;
+          width: 50%;
+          z-index: 3;
+          height: 100%;
+          border-radius: 10px;
+        }
+        #document{
+          width: 100%;
+          animation: document 1s linear infinite;
+
+        }
+        #video{
+          width: 40%;
+          animation: video 1s linear infinite;
+
+        }
+        #upload{
+          width: 80%;
+          animation: upload 1s linear infinite;
+
+        }
+      }
+    }
+
+  }
+  #nochar {
+    color: $para-color;
+    margin-top: 5px;
+  }
+  select,
+  option {
+    color: $para-color;
+  }
+
+  ::placeholder {
+    color: $para-color;
+  }
+  .text-style{
+    font-size: 1.5rem;
+    color: $para-color;
+    cursor: pointer;
+    margin: 0 5px;
+  }
+
+  #checkupload svg{
+    color: $primary-color;
+  }
+}
+
+@keyframes icon-radius {
+  from {
+    border-radius: 52% 48% 76% 24% / 30% 49% 51% 70%;
+  }
+}
+
+@keyframes icon-radius-2 {
+  from {
+    border-radius: 90% 10% 76% 24% / 25% 81% 19% 75%;
+  }
+}
+
+@keyframes document {
+  from {
+    width: 99%;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes video {
+  from {
+    width: 40%;
+  }
+  to {
+    width: 41%;
+  }
+}
+@keyframes upload {
+  from {
+    width: 80%;
+  }
+  to {
+    width: 81%;
+  }
+}
