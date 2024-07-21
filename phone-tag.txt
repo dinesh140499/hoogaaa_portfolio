@@ -1,0 +1,30 @@
+  <div className="mt-3 phone-group">
+                <label htmlFor="phone" className="form-label mb-0">
+                  Phone number
+                </label>
+                <div className="d-flex align-items-end mt-2">
+                  <select name="country" id="country" className="form-control">
+                    <option value="IN">IN</option>
+                    {/* <option value="US">US </option> */}
+                  </select>
+                  <div2 className="w-100">
+                    <div className="d-flex align-items-center">
+                      <input
+                        onChange={inputData}
+                        name="phone"
+                        type="number"
+                        className="form-control phone"
+                        value={data.phone}
+                        id="phone"
+                        aria-describedby="phone"
+                        placeholder="+1 (555) 000-0000"
+                      />
+                       
+                     
+                    </div>
+                  </div2>
+                </div>
+                <p className="verifiedaccount">
+                  {serviceType === "phone" ? data.phone : ""}
+                </p>
+              </div>

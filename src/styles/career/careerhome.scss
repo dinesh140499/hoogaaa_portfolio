@@ -1,0 +1,53 @@
+@import "../common/colors.scss";
+
+.career-home {
+  padding-bottom: 0;
+  button {
+    font-size: 0.9rem;
+  }
+  h4 {
+    margin-top: 1rem;
+    font-weight: bold;
+  }
+}
+
+.career-card {
+  text-align: left;
+  h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  .card {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    h4 {
+      font-size: 1.1rem;
+      font-weight: 500;
+    }
+    p {
+      color: $para-color;
+      font-size: 0.9rem;
+    }
+    span {
+      color: $para-color;
+      font-size: 1rem;
+      font-size: 0.9rem;
+    }
+
+    a {
+      border-radius: 8px;
+      outline: none;
+      border: none;
+      color: #fff;
+      background-color: $primary-color;
+      padding: 10px 20px;
+      text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+      display: inline-flex;
+      align-items: center;
+      font-size: 14px;
+    }
+
+    &:hover {
+      color: $primary-color;
+    }
+  }
+}

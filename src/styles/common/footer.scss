@@ -1,0 +1,33 @@
+@import "./colors.scss";
+
+.footer {
+  margin-top: 50px;
+  padding-bottom: 20px;
+  text-align: left;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  .logo {
+    font-style: italic;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: $black-color;
+    margin-top: 0;
+  }
+
+  h4 {
+    font-size: 1.2rem;
+  }
+
+  a {
+    display: block;
+    margin-top: 10px;
+    color: $para-color;
+  }
+
+  p {
+    color: $para-color;
+  }
+
+  .footer-bottom {
+    margin-top: 3rem;
+  }
+}

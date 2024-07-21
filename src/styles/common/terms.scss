@@ -1,0 +1,14 @@
+@import '../common/colors.scss';
+
+.terms{
+    padding-bottom: 0;
+    text-align: left;
+    p{
+        color: $para-color;
+    }
+
+    .title{
+        font-size: 1.1rem;
+        font-weight: 500;
+    }
+}

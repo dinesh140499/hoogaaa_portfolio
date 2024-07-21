@@ -1,0 +1,33 @@
+@import "../common/colors.scss";
+
+
+.customer{
+    margin-top: 50px;
+    background-color: $bg-color;
+
+    .customer-card{
+        .img-box{
+            height: 45px;
+            width: 45px;
+            img{
+                border-radius: 50%;
+                width: 100%;
+            }
+        }
+        p{
+            font-weight:500;
+        }
+        span{
+            color:$para-color;
+        }
+    }
+}
+
+@media (max-width:769px) {
+    .customer-card{
+        div{
+            justify-content: center;
+            flex-direction: column;
+        }
+    }
+}

@@ -1,0 +1,51 @@
+@import "../common/colors.scss";
+
+
+.team-card {
+  padding: 0.5rem;
+  background-color: #f9fafb;
+  text-align: center;
+
+  .social-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+    a {
+      color: $para-color;
+      cursor: pointer;
+      font-size: 1.5rem;
+      opacity: 0.8;
+    }
+  }
+
+  .img-box {
+    max-width: 100%;
+    margin: auto;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    img {
+      border-radius: 50%;
+      width: 100%;
+    }
+  }
+  span {
+    color: $primary-color;
+  }
+
+  h4 {
+    font-size: 1.1rem;
+  }
+  p {
+    margin-top: 0.5rem;
+    color: $para-color;
+    padding: 0 3rem;
+    margin-bottom: 0;
+    font-size: 0.9rem;
+  }
+}
